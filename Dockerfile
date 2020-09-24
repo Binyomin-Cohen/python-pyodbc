@@ -18,6 +18,6 @@ RUN apt-get update \
 && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile \
 && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc \
 && pip install pyodbc
-WORKDIR /src
+WORKDIR /
 
 CMD [ "/bin/bash" ]
